@@ -78,9 +78,11 @@ private:
 
 struct Avout {
 	Avout(const char* name, long year_of_apert) : name{ name }, apert{ year_of_apert }{}
+
 		void announce() const {
 			printf("My name is %s and my apert is %d.\n", name,apert.get_year());
 		};
+
 		ClockOfTheLongNow apert;
 		const char* name;
 };
